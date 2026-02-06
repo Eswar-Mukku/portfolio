@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Personal Portfolio showcasing creative work and skills.">
+    <title>Eswar Mukku | Web Developer & AI Enthusiast</title>
+
+    <!-- Google Fonts: Outfit for a modern, clean look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for Icons (Optional, using CDN for now) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">ESWAR<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Work</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <span class="hero-subtitle">Hello, I'm Eswar Mukku</span>
+            <h1 class="hero-title">Web <span class="highlight">Developer</span><br>& <span
+                    class="typed-text"></span><span class="cursor">|</span></h1>
+            <p class="hero-description">
+                Computer Science Engineering student passionate about building scalable, data-driven applications with
+                modern web technologies and machine learning.
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-background-elements">
+            <!-- Decorative blobs/gradients will be handled in CSS -->
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="profile_photo.jpg" alt="Eswar Mukku Profile">
+                    <div class="image-border"></div>
+                </div>
+                <div class="about-text">
+                    <h3>About Me</h3>
+                    <p>
+                        I'm a B.Tech Computer Science student at Swarnandhra College of Engineering and Technology with
+                        a CGPA of 7.75.
+                        I have hands-on experience in web development and AI/ML through internships at ExcelR and
+                        Teachnook.
+                    </p>
+                    <p>
+                        I'm passionate about applying analytical thinking and problem-solving abilities to build
+                        scalable applications.
+                        My goal is to gain exposure to cloud-based and security-focused systems in real-world
+                        professional environments.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-item"><i class="fa-brands fa-python"></i> Python</div>
+                        <div class="skill-item"><i class="fa-brands fa-html5"></i> HTML5</div>
+                        <div class="skill-item"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+                        <div class="skill-item"><i class="fa-brands fa-js"></i> JavaScript</div>
+                        <div class="skill-item"><i class="fa-brands fa-react"></i> ReactJS</div>
+                        <div class="skill-item"><i class="fa-brands fa-node"></i> Node.js</div>
+                        <div class="skill-item"><i class="fa-brands fa-aws"></i> AWS</div>
+                        <div class="skill-item"><i class="fa-brands fa-git-alt"></i> Git/GitHub</div>
+                        <div class="skill-item"><i class="fa-solid fa-database"></i> MySQL</div>
+                        <div class="skill-item"><i class="fa-solid fa-database"></i> MongoDB</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Timeline -->
+            <div class="experience-section">
+                <h3 class="subsection-title">Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>AI Intern</h4>
+                            <span class="company">Teachnook (Remote)</span>
+                            <ul>
+                                <li>Developed predictive ML models and dashboards using Python and real datasets</li>
+                                <li>Optimized regression models and improved accuracy through feature selection</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Web Developer Intern</h4>
+                            <span class="company">ExcelR (Remote)</span>
+                            <ul>
+                                <li>Designed responsive web applications using HTML, CSS, and JavaScript</li>
+                                <li>Integrated APIs and improved UI performance by 30%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Selected Work</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img" style="background: linear-gradient(45deg, #FF6B6B, #556270);"><i
+                                class="fa-solid fa-utensils" style="font-size: 4rem; color: white; opacity: 0.3;"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Food Intake Tracker</h3>
+                        <p>A dynamic web application to track daily food intake with meal-wise calorie calculation and
+                            real-time updates using JavaScript.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img" style="background: linear-gradient(45deg, #6C63FF, #00F5D4);"><i
+                                class="fa-solid fa-briefcase" style="font-size: 4rem; color: white; opacity: 0.3;"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <p>Premium personal portfolio website with modern design, glassmorphism effects, custom
+                            animations, and integrated contact form.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Web3Forms</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2 class="contact-title">Let's Work Together</h2>
+                <p>I'm currently seeking opportunities in web development and AI/ML. Feel free to reach out!</p>
+                <div class="contact-details">
+                    <p><i class="fa-solid fa-envelope"></i> eswarmukku2176@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 6281213262</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Palakollu, Andhra Pradesh, India</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/eswar-mukku" target="_blank" class="social-link"
+                        title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/eswarmukku" target="_blank" class="social-link" title="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="mailto:eswarmukku2176@gmail.com" class="social-link" title="Email"><i
+                            class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <!-- Web3Forms Access Key - GET YOUR OWN KEY FROM: https://web3forms.com -->
+                <input type="hidden" name="access_key" value="d3c52ab1-c7ca-4cfe-af8e-3cf8670a0993">
+
+                <!-- Optional: Redirect after form submission -->
+                <input type="hidden" name="redirect" value="false">
+
+                <!-- Optional: Subject line -->
+                <input type="hidden" name="subject" value="New Contact from Portfolio">
+
+                <!-- Your email (where you'll receive messages) -->
+                <input type="hidden" name="from_name" value="Portfolio Contact Form">
+
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder=" ">
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder=" ">
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <p class="form-status" style="margin-top: 20px; text-align: center; display: none;"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Eswar Mukku. Designed & Built with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
