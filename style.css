@@ -39,8 +39,6 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
-    cursor: none;
-    /* Custom cursor */
 }
 
 a {
@@ -58,34 +56,7 @@ img {
     display: block;
 }
 
-/* Custom Cursor */
-.cursor-dot,
-.cursor-outline {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 9999;
-    pointer-events: none;
-}
 
-.cursor-dot {
-    width: 8px;
-    height: 8px;
-    background-color: var(--secondary-color);
-}
-
-.cursor-outline {
-    width: 40px;
-    height: 40px;
-    border: 2px solid var(--primary-color);
-    transition: width 0.2s, height 0.2s, background-color 0.2s;
-}
-
-body:hover .cursor-outline {
-    opacity: 1;
-}
 
 /* Layout Utilities */
 .container {
@@ -199,6 +170,29 @@ body:hover .cursor-outline {
     font-size: 1.8rem;
     font-weight: 800;
     letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
+    transition: var(--transition);
+}
+
+.logo:hover .logo-icon {
+    transform: rotate(-10deg) scale(1.1);
+    box-shadow: 0 6px 20px rgba(108, 99, 255, 0.5);
 }
 
 .logo span {
@@ -554,7 +548,6 @@ body:hover .cursor-outline {
     overflow: hidden;
     transition: var(--transition);
     position: relative;
-    group: hover;
 }
 
 .project-card:hover {
