@@ -39,12 +39,16 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
+    cursor: default;
+    /* Ensure default arrow cursor is visible */
 }
 
 a {
     text-decoration: none;
     color: inherit;
     transition: var(--transition);
+    cursor: pointer;
+    /* Ensure hand cursor on all links */
 }
 
 ul {
@@ -415,6 +419,8 @@ img {
     align-items: center;
     gap: 10px;
     transition: var(--transition);
+    cursor: pointer;
+    /* Add hand cursor for skill items */
 }
 
 .skill-item:hover {
@@ -595,6 +601,7 @@ img {
     padding: 5px 10px;
     border-radius: 5px;
     color: var(--secondary-color);
+    cursor: default;
 }
 
 .project-links {
